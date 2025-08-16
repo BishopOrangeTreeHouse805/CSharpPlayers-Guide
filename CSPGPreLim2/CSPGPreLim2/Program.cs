@@ -12,7 +12,16 @@
 // Console.WriteLine("I kick ass.");
 
 //Consolas and Telim
-Console.WriteLine("Bread is ready.");
-Console.WriteLine("Who is this bread for?");
-string breadFor = Console.ReadLine();
-Console.WriteLine($"Noted: {breadFor} got bread.");
+// Console.WriteLine("Bread is ready.");
+// Console.WriteLine("Who is this bread for?");
+// string breadFor = Console.ReadLine();
+// Console.WriteLine($"Noted: {breadFor} got bread.");
+
+//The Things Namer 3000
+Console.WriteLine("What kind of thing are we talking about?");
+string a = Console.ReadLine();
+Console.WriteLine("How would you describe it? Big? Azure? Tattered?");
+string b = Console.ReadLine();
+string c = "of Doom";
+string d = "3000";
+Console.WriteLine("The "+ b + " " + a + " of " + c + " " + d );
