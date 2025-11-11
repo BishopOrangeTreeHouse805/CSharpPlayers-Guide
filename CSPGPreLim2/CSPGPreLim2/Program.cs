@@ -28,21 +28,21 @@
 
 
 
-//The Variable Shop 
-char letter = 'J';
-string term = "Santa Barbara";
-bool isDenied = false;
-float fraction = 1.7f;
-double ratio = 2.334556;
-decimal money = 1000.00m;
-int number = 3;
-uint digit = 3;
-long distance = 4500000;
-ulong distance2 = 4500001;
-short balance = 30;
-ushort debt = 45;
-byte age = 25;
-sbyte acceleration = -10;
+//The Variable Shop and The Variable Shop Returns.
+char letter = 't';
+string term = "San Clemente";
+bool isDenied = true;
+float fraction = 1.70f;
+double ratio = 2.4556;
+decimal money = 3000.00m;
+int number = -50;
+uint digit = 6;
+long distance = 5000000;
+ulong distance2 = 5000001;
+short balance = 31;
+ushort debt = 46;
+byte age = 5;
+sbyte acceleration = -1;
 
 
 Console.WriteLine(letter);
@@ -61,4 +61,3 @@ Console.WriteLine(age);
 Console.WriteLine(acceleration);
 
 
-//The Variable Shop Returns.
