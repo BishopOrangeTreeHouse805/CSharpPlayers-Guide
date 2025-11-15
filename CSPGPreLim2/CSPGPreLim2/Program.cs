@@ -118,15 +118,27 @@
 
 using System.Data;
 
-Console.WriteLine("Enter the row: ");
-int row = int.Parse(Console.ReadLine());
+// Console.WriteLine("Enter the row: ");
+// int row = int.Parse(Console.ReadLine());
+//
+// Console.WriteLine("Enter the column: ");
+// int column = int.Parse(Console.ReadLine());
+//
+// Console.Beep();
+// Console.WriteLine($@"Deploy to: 
+// ({row    }, {column - 1})
+// ({row - 1}, {column    })
+// ({row    }, {column + 1})
+// ({row + 1}, {column    })
+// ");
 
-Console.WriteLine("Enter the column: ");
-int column = int.Parse(Console.ReadLine());
 
-Console.WriteLine($@"Deploy to: 
-({row    }, {column - 1})
-({row - 1}, {column    })
-({row    }, {column + 1})
-({row + 1}, {column    })
-");
+//Challenge: Repairing the Clock Tower
+Console.WriteLine("Enter the clock time number: ");
+int numericInput = int.Parse(Console.ReadLine());
+
+string clockSound = numericInput % 2 == 0
+    ? "Tick"
+    : "Tock";
+    
+Console.WriteLine(clockSound);
