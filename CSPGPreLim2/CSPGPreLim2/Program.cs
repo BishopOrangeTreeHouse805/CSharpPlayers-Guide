@@ -178,3 +178,5 @@
 
 
 //Challenge: Buying Inventory
+
+//Challenge: Discounted Inventory
