@@ -178,5 +178,14 @@
 
 
 //Challenge: Buying Inventory
+Console.WriteLine($@"The following items are available: 
+1 - Rope
+2 - Torches
+3 - Climbing Equipment
+4 - Clean Water
+5 - Machete
+6 - Canoe
+7 - Food Supplies
+");
 
 //Challenge: Discounted Inventory
