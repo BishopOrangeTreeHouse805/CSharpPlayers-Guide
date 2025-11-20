@@ -188,4 +188,7 @@ Console.WriteLine($@"The following items are available:
 7 - Food Supplies
 ");
 
+Console.Write("What number do you want to see the price of? ");
+int itemSelectionNumber = int.Parse(Console.ReadLine());
+
 //Challenge: Discounted Inventory
