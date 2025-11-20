@@ -192,3 +192,9 @@ Console.Write("What number do you want to see the price of? ");
 int itemSelectionNumber = int.Parse(Console.ReadLine());
 
 //Challenge: Discounted Inventory
+
+
+//Challenge: The Prototype
+
+
+//Challenge: The Magic Cannon
