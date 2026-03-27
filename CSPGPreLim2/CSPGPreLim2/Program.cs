@@ -286,10 +286,12 @@
 
 
 // //Challenge: The Prototype
+
+int user1Number;
 while (true)
 {
     Console.Write("User 1, enter a number between 0 and 100: ");
-    int user1Number = int.Parse(Console.ReadLine());
+    user1Number = int.Parse(Console.ReadLine());
 
     if (user1Number < 0 || user1Number > 100)
     {
@@ -300,5 +302,23 @@ while (true)
         break;
     }
     
+}
+
+Console.Clear();
+
+while (true)
+{
+    Console.Write("User 2, guess the number of User 1 (0-100): ");
+    int user2Number = int.Parse(Console.ReadLine());
+
+    if (user2Number == user1Number)
+    {
+        Console.WriteLine("You win!");
+        break;
+    }
+    
+    else if (user2Number > user1Number) { Console.WriteLine("Too high.");}
+    
+    else { Console.WriteLine("Too low."); }
 }
 // //Challenge: The Magic Cannon
