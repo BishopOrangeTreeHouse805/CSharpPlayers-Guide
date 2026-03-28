@@ -287,29 +287,74 @@
 
 // //Challenge: The Prototype
 
-int user1Number;
-while (true)
+// int user1Number;
+// while (true)
+// {
+//     Console.Write("User 1, enter a number between 0 and 100: ");
+//     if (int.TryParse(Console.ReadLine().Trim(), out user1Number) && user1Number >= 0 &&  user1Number <= 100)
+//         break;
+//     
+//     Console.WriteLine("Invalid input. Please enter a number between 0 and 100.");
+// }
+//
+// Console.Clear();
+//
+// while (true)
+// {
+//     Console.Write("User 2, guess the number of User 1 (0-100): ");
+//     if (!int.TryParse(Console.ReadLine().Trim(), out int user2Number ))
+//     {
+//         Console.WriteLine("Invalid input. Please enter number.");
+//         continue;
+//     }
+//
+//     if (user2Number == user1Number) { Console.WriteLine("You win!"); break; }
+//     else if (user2Number > user1Number) { Console.WriteLine("Too high.");}
+//     else {Console.WriteLine("Too low."); }
+// }
+
+
+
+
+//Challenge: The Magic Cannon
+
+Console.WriteLine("Turn the crank to fire the Magic Cannon!");
+Console.WriteLine("Press Escape to stop the crank.");
+
+for(int crankTurn = 1; crankTurn <= 100; crankTurn++)
 {
-    Console.Write("User 1, enter a number between 0 and 100: ");
-    if (int.TryParse(Console.ReadLine(), out user1Number) && user1Number >= 0 &&  user1Number <= 100)
-        break;
+    ConsoleKeyInfo key = Console.ReadKey(true);
+    if (key.Key == ConsoleKey.Escape) break;
     
-    Console.WriteLine("Invalid input. Please enter a number between 0 and 100.");
-}
+    string blastType;
 
-Console.Clear();
-
-while (true)
-{
-    Console.Write("User 2, guess the number of User 1 (0-100): ");
-    if (!int.TryParse(Console.ReadLine(), out int user2Number ))
+    if (crankTurn % 3 == 0 && crankTurn % 5 == 0)
     {
-        Console.WriteLine("Invalid input. Please enter number.");
-        continue;
+        blastType = "Fire and Electric";
+        Console.ForegroundColor = ConsoleColor.Blue;
     }
 
-    if (user2Number == user1Number) { Console.WriteLine("You win!"); break; }
-    else if (user2Number > user1Number) { Console.WriteLine("Too high.");}
-    else { Console.WriteLine("Too low."); }
+    else if (crankTurn % 3 == 0)
+    {
+        blastType = "Fire";
+        Console.ForegroundColor = ConsoleColor.Red;
+
+    }
+    else if (crankTurn % 5 == 0)
+    {
+        blastType = "Electric";
+        Console.ForegroundColor = ConsoleColor.Yellow;
+    }
+    else
+    {
+        blastType = "Normal";
+        Console.ForegroundColor = ConsoleColor.Gray;
+        
+    }
+    
+    Console.WriteLine($"{crankTurn}: {blastType}");
+
+
+    if (crankTurn == 100) crankTurn = 0;
 }
-// //Challenge: The Magic Cannon
+
