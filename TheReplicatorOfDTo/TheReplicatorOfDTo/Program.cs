@@ -5,6 +5,7 @@ int[] numberArray = new int[5];
 
 for (int i = 0; i < numberArray.Length; i++)
 {
+    Console.Write("Enter a number: ");
     int userInput = int.Parse(Console.ReadLine());
     numberArray[i] = userInput;
 }
